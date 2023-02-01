@@ -1,0 +1,1 @@
+web: gunicorn EWSweb.wsgi --log-file -

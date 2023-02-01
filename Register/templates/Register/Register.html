@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Đăng kí thành viên mới</title>
+<head>
+
+{% extends 'Home/base.html' %}
+
+<body>
+{% block content %}
+<div style="color:green">
+	<h4>ĐĂNG KÍ</h4>
+	<form action="{% url 'Register:Register'%}" method="POST">
+		{% csrf_token %}
+		{{RF.as_p}}
+		<input type="Submit">
+	</form>	
+</div>
+{% endblock %}
+</body>
+</html>

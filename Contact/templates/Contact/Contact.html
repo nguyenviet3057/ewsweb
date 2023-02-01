@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Liên hệ, cung cấp thông tin cảnh báo</title>
+<head>
+
+{% extends 'Home/base.html' %}
+
+<body>
+{% block content %}
+	<div id="posts" class="wf-section">
+		<div id="Latest-post" class="w-container">
+			<div class="section-heading">
+				<h2 class="section-title">THÔNG TIN LIÊN HỆ TRONG TRƯỜNG HỢP KHẨN CẤP</h2>
+				<div class="med-divider"></div>
+			</div>
+			<br>
+			<ul class="blog-title" style="color: black; padding-bottom: 57px;">
+				<li>Đường dây nóng TC PCTT: 024.37333.3664 - 024.3734.9821</li>
+				<li>Facebook: https://www.facebook.com/phongchongthientaivn</li>
+				<li>Vụ Quản lý thiên tai cộng đồng: 024.3733.5804</li>
+				<li>Đề tài cấp nhà nước ĐTĐL 78/21: 039.9750.875</li>
+				<li>Email: canhbaothientaicongdong@gmail.com</li>
+			</ul>
+		</div>
+	</div>
+
+	<div class="main-section bottom-padding w-container">
+		<div class="section-heading">
+			<h2 class="section-title">CỘNG ĐỒNG GỬI THÔNG TIN CẢNH BÁO</h2>
+			<div class="med-divider"></div>
+		</div>
+		<form action="{% url 'Contact:Contact'%}" method="post" style="text-align: center; display: block;">
+			{% csrf_token %}
+			{{LF.as_p}}
+			<input type="Submit">
+		</form>	
+	</div>
+
+	<div id="posts" class="wf-section">
+		<div id="Latest-post" class="w-container">
+			<div class="section-heading">
+				<h2 class="section-title">ĐĂNG NHẬP</h2>
+				<div class="med-divider"></div>
+			</div>
+			<br>
+			<form action="{% url 'Contact:Contact'%}" method="post" style="text-align: center; display: block; padding-bottom: 57px;">
+				{% csrf_token %}
+				{{LF.as_p}}
+				<input type="Submit">
+			</form>	
+		</div>
+	</div>
+
+	<div class="main-section bottom-padding w-container">
+		<div class="section-heading">
+			<h2 class="section-title">ĐĂNG KÍ THÀNH VIÊN</h2>
+			<div class="med-divider"></div>
+		</div>
+		<form action="{% url 'Contact:Contact'%}" method="post" style="text-align: center; display: block;">
+			{% csrf_token %}
+			{{LF.as_p}}
+			<input type="Submit">
+		</form>	
+	</div>
+
+{% endblock %}
+</body>
+</html>

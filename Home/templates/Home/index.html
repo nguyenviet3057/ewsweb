@@ -1,0 +1,159 @@
+<!--
+
+	* Phiên bản thử nghiệm Website cảnh báo sớm có sự tham gia của cộng đồng Ver 1.0
+	* Bản quyền thuộc sản phẩm đề tài ĐTĐL.CN 78.21	
+
+-->
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Hệ thống cảnh báo sớm có sự tham gia của cộng đồng</title>
+	{% extends 'Home/base.html' %}
+</head>	
+
+{% block content %}
+<body onLoad="initialize()">
+	<div id="posts" class="main-section bottom-padding wf-section">
+		<div id="Latest-post" class="w-container">
+			<div class="section-heading">
+				<h2 class="section-title">BẢN ĐỒ CẢNH BÁO CÁC KHU VỰC NGHIÊN CỨU CHI TIẾT</h2>
+				<div class="med-divider"></div>
+			</div>
+			
+			<div class="w-dyn-list" style="text-align: center; display: block;">
+				<div role="list" class="w-clearfix w-dyn-items w-row">
+					<iframe
+						width="650"
+						height="450"
+						frameborder="0" style="border:0"
+						loading="lazy" allowfullscreen
+						src="https://www.google.com/maps/embed/v1/place?key=AIzaSyDaX6l5GG3SRAmR3iHvINd2oolA4a0tGUU&q=Bản Rịa, Hà Giang, Vietnam&center=22.445562,104.482997&zoom=13&maptype=satellite">
+					</iframe>
+				</div>
+				<div role="list">
+					<iframe
+						width="650"
+						height="450"
+						frameborder="0" style="border:0"
+						loading="lazy" allowfullscreen
+						src="https://www.google.com/maps/embed/v1/place?key=AIzaSyDaX6l5GG3SRAmR3iHvINd2oolA4a0tGUU&q=Cát Thịnh, Yên Bái, Vietnam&center=21.491580,104.678683&zoom=13&maptype=satellite">
+					</iframe>
+				</div>				
+				<div role="list">
+					<iframe
+						width="650"
+						height="450"
+						frameborder="0" style="border:0"
+						loading="lazy" allowfullscreen
+						src="https://www.google.com/maps/embed/v1/place?key=AIzaSyDaX6l5GG3SRAmR3iHvINd2oolA4a0tGUU&q=Chiềng Đông, Yên Châu, Sơn La, Vietnam&center=21.120142,104.239673&zoom=13&maptype=satellite">
+					</iframe>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div id="posts" class="wf-section">
+		<div id="Latest-post" class="w-container">
+			<div class="section-heading">
+				<h2 class="section-title">MỘT SỐ KHU VỰC CẦN CẢNH GIÁC TRONG 24 GIỜ TỚI</h2>
+				<div class="med-divider"></div>
+			</div>
+			<br>
+			<a href='' target='_blank' style="text-align: center; display: block;"><img src="../../static/Home/Bang thong ke khu vuc nguy hiem thien tai.jpg"/></a>
+		</div>
+	</div>
+
+	<div class="main-section bottom-padding w-container">
+		<div class="section-heading">
+			<h2 class="section-title">TIN TỨC PHÒNG CHỐNG THIÊN TAI</h2>
+			<div class="med-divider"></div>
+		</div>
+		<div class="w-dyn-list">
+			<div role="list" class="w-clearfix w-dyn-items w-row">
+				<div role="listitem" class="blog-thumbnail w-dyn-item w-col w-col-4">
+					<a href="https://baotainguyenmoitruong.vn/kiem-tra-cong-tac-ung-pho-khac-phuc-hau-qua-sat-lo-dat-tai-thai-nguyen-340438.html" class="thumbnail-wrapper w-inline-block">
+						<div style="background-image: url(&quot;https://btnmt.1cdn.vn/2022/05/31/1(4).jpg&quot;); transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg); transform-style: preserve-3d;" class="thumbnail-image image-wrapper"></div>
+						<div class="thumbnail-text">
+							<div class="blog-title">Công tác tái thiết sau thiên tai</div>
+							<div class="preview-text">Kiểm tra công tác ứng phó, khắc phục hậu quả sạt lở đất tại Thái Nguyên</div>
+						</div>
+						<div class="thumb-details w-clearfix">
+							<div class="author-title">Nguồn: Báo tài nguyên và Môi trường</div>
+							<div class="thumbnail-date">31/05/2022</div>
+						</div>
+					</a>
+				</div>
+				
+				<div role="listitem" class="blog-thumbnail w-dyn-item w-col w-col-4">
+					<a href="https://vtv.vn/xa-hoi/yen-bai-tinh-lo-172-van-chua-thong-tuyen-sau-6-ngay-sat-lo-20220607000653729.htm" class="thumbnail-wrapper w-inline-block">
+						<div style="background-image: url(&quot;https://vtv1.mediacdn.vn/thumb_w/640/2022/6/7/vnapotalyenbaiduongtinhlo172vanchuaduocthongtuyensau6ngaysatlo1205497866155426-1654534953697118518675.jpg&quot;); transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg); transform-style: preserve-3d;" class="thumbnail-image image-wrapper"></div>
+						<div class="thumbnail-text">
+							<div class="blog-title">Thông tin thiệt hại</div>
+							<div class="preview-text">Tỉnh lộ 172 vẫn chưa thông tuyến sau 6 ngày sạt lở</div>
+						</div>
+						<div class="thumb-details w-clearfix">
+							<div class="author-title">Nguồn: VTV Điện tử</div>
+							<div class="thumbnail-date">07/06/2022</div>
+						</div>
+					</a>
+				</div>
+				
+				<div role="listitem" class="blog-thumbnail w-dyn-item w-col w-col-4">
+					<a href="https://vnanet.vn/vi/anh/anh-thoi-su-trong-nuoc-1014/son-la-can-som-di-chuyen-gan-70-ho-dan-vung-nguy-co-sat-lo-o-ban-na-pan-yen-chau-5550780.html" class="thumbnail-wrapper w-inline-block">
+						<div style="background-image: url(&quot;https://vnanet.vn/Data/Articles/2021/07/12/5550771/vna_potal_son_la_can_som_di_chuyen_gan_70_ho_dan_vung_nguy_co_sat_lo_o_ban_na_pan_yen_chau_stand.jpg&quot;); transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg); transform-style: preserve-3d;" class="thumbnail-image image-wrapper"></div>
+						<div class="thumbnail-text">
+							<div class="blog-title">Cảnh báo khu vực nguy hiểm</div>
+							<div class="preview-text">Điểm lở đá nguy hiểm tại xã Chiềng Đông</div>
+						</div>
+						<div class="thumb-details w-clearfix">
+							<div class="author-title">Nguồn: TTX Việt Nam</div>
+							<div class="thumbnail-date">12/07/2021</div>
+						</div>
+					</a>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="w-container">
+		<div class="section-heading">
+			<h2 class="section-title">CÁC CƠ QUAN PHỐI HỢP THỰC HIỆN ĐỀ TÀI ĐTĐL.CN 78.21</h2>
+			<div class="med-divider"></div>
+		</div>
+		<div class="w-dyn-list">
+			<div role="list" class="w-clearfix w-dyn-items w-row">
+				<div role="listitem" class="w-dyn-item w-col w-col-4">
+					<a href="https://www.hust.edu.vn/">
+						<div style="background-image: url(&quot;../../static/Home/Logo_DH Bach Khoa.png&quot;); transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg); transform-style: preserve-3d;" class="thumbnail-image image-wrapper">							
+						</div>
+					</a>
+				</div>
+				
+				<div role="listitem" class="w-dyn-item w-col w-col-4">
+					<a href="https://www.facebook.com/phongchongthientaivn">
+						<div style="background-image: url(&quot;../../static/Home/Logo_Vu cong dong facebook.jpg&quot;); transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg); transform-style: preserve-3d; " class="thumbnail-image image-wrapper">
+						</div>
+					</a>
+				</div>
+				
+				<div role="listitem" class="w-dyn-item w-col w-col-4">
+					<a href="http://igsvn.vn/">
+						<div style="background-image: url(&quot;../../static/Home/Logo_VDC.jpg&quot;); transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg); transform-style: preserve-3d; " class="thumbnail-image image-wrapper">
+						</div>
+					</a>
+				</div>
+
+				<div class="thumbnail-text">
+							<div class="blog-title"></div>
+							<div class="preview-text"></div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+{% endblock %}
+</body>
+<html>
+
+
